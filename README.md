@@ -38,10 +38,3 @@ Create a system to manage a music library. The system should keep track of **art
 
 ---
 
-### **Why Does This Task Demonstrate Composition and Aggregation Well?**
-
-- **Composition:** An album cannot exist without songs, and an artist cannot exist without albums.
-- **Aggregation:** A song can exist independently of an album because it references an artist (`Performer`) but is not directly part of the album.
-
----
-
