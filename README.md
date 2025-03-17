@@ -28,6 +28,8 @@ Create a system to manage a music library. The system should keep track of **art
         - `TimeSpan Duration` — the duration of the song.
         - `Artist Performer` — the artist who performs the song.
 
+![](MusicLibrary.png)
+
 ### **Examples**
 
 1. Create several artists and albums.
