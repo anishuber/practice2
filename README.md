@@ -10,7 +10,7 @@ Create a system to manage a music library. The system should keep track of **art
     - **Properties:**
         - `string Name` — the name of the artist.
         - `string Genre` — the music genre.
-        - `List<Album> Albums` — a list of albums (composition).
+        - `List<Album> Albums` — a list of albums.
     - **Method:**
         - `void AddAlbum(Album album)` — add an album to the artist.
 
@@ -18,7 +18,7 @@ Create a system to manage a music library. The system should keep track of **art
     - **Properties:**
         - `string Title` — the title of the album.
         - `DateTime ReleaseDate` — the release date.
-        - `List<Song> Songs` — a list of songs (composition).
+        - `List<Song> Songs` — a list of songs.
     - **Method:**
         - `void AddSong(Song song)` — add a song to the album.
 
@@ -26,7 +26,7 @@ Create a system to manage a music library. The system should keep track of **art
     - **Properties:**
         - `string Title` — the title of the song.
         - `TimeSpan Duration` — the duration of the song.
-        - `Artist Performer` — the artist who performs the song (aggregation).
+        - `Artist Performer` — the artist who performs the song.
 
 ### **Examples**
 
