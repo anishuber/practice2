@@ -1,4 +1,4 @@
-# **Task: Music Library Management** 🎵
+# **Music Library Management** 🎵
 
 ### **Description**
 
@@ -28,7 +28,7 @@ Create a system to manage a music library. The system should keep track of **art
         - `TimeSpan Duration` — the duration of the song.
         - `Artist Performer` — the artist who performs the song (aggregation).
 
-### **Example Tasks for Students**
+### **Examples**
 
 1. Create several artists and albums.
 2. Add songs to albums.
