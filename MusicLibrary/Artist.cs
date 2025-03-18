@@ -1,26 +1,29 @@
-﻿namespace MusicLibrary;
+namespace MusicLibrary;
 
 public class Artist
 {
-    // TODO: Define a private field to store the artist's name
+    private string name;
+    private DateTime? dateOfBirth;
+    private List<Album> albums;
 
-    // TODO: Implement a property to get and initialize the artist's name with validation
+    public Artist(string name, DateTime? dateOfBirth)
+    {
+        this.Name = name;
+        this.DateOfBirth = dateOfBirth;
+        this.albums = new List<Album>();
+    }
 
-    // TODO: Create a constructor to initialize the artist's name and genre
+    public string Name
+    {
+        get => this.name;
+        private set => this.name = string.IsNullOrEmpty(value) ? throw new ArgumentException("Name cannot be null or empty.", nameof(value)) : value;
+    }
 
-    // TODO: Implement a property to get the artist's genre
+    public DateTime? DateOfBirth
+    {
+        get => this.dateOfBirth;
+        init => this.dateOfBirth = value > DateTime.Now || value < DateTime.MinValue ? throw new ArgumentOutOfRangeException(nameof(value)) : value;
+    }
 
-    // TODO: Implement a property to get and set the list of albums for the artist
-
-    // TODO: Add the ToString method to return the artist's name and genre as a string artist representation
-
-    // TODO: Implement a method to add an album to the artist's list of albums
-
-    // TODO: Implement a method to remove an album from the artist's list of albums by album object
-
-    // TODO: Implement a method to remove an album from the artist's list of albums by index
-
-    // TODO: Implement a method to remove an album from the artist's list of albums by title
-
-    // TODO: Implement a method to remove an album from the artist's list of albums by release date
+    public override string ToString() => $"{this.Name} ({this.DateOfBirth})";
 }

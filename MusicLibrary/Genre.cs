@@ -3,6 +3,8 @@ namespace MusicLibrary;
 public enum Genre
 {
     None,
-
-    // TODO: Add more genres as needed
+    Rock,
+    Pop,
+    Jazz,
+    Classical,
 }
