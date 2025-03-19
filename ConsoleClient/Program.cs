@@ -29,7 +29,6 @@ player.Play();
 player.Pause();
 player.Next();
 
-var customPlaylist = new List<Song> { song1, song3 };
-player.CreatePlaylist(customPlaylist);
+player.CreatePlaylist(song1, song3, song4);
 
 player.Play();
